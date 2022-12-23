@@ -119,7 +119,7 @@ const createPost = (item) => {
                 <span class="like-button__label">Mi Piace</span>
               </button>
             </div>
-            <div class="likes__counter">Piace a <b id="like-counter-1" class="js-likes-counter">${item.likes}</b> persone</div>
+            <div class="likes__counter">Piace a <b id="like-counter-${item.id}" class="js-likes-counter">${item.likes}</b> persone</div>
           </div>
         </div>
       </div>
@@ -143,3 +143,26 @@ const addPosts = array => {
 //Print posts in page
 
 targetPostList.innerHTML = addPosts(posts);
+
+//Pick all like buttons
+
+const likeButtons = document.querySelectorAll('.like-button');
+
+//add event listener to button
+likeButtons.forEach( (button, i) => {
+    button.addEventListener('click', () => {
+        //Toggle liked class
+        button.classList.toggle('like-button--liked');
+        
+        //Increment or decrement likes
+        if (button.classList.contains('like-button--liked')){
+            posts[i].likes++;
+        } else {
+            posts[i].likes--; 
+        }
+
+        //Update likes number
+        const likeTarget = document.getElementById(`like-counter-${i+1}`);
+        likeTarget.innerText = posts[i].likes;
+    })
+});
