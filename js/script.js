@@ -126,3 +126,18 @@ const createPost = (item) => {
 }
 
 
+//Function to add post in page
+
+const addPosts = array => {
+
+    let posts = ''
+    array.forEach((post) => {
+        posts += createPost(post);
+    });
+
+    return posts
+}
+
+//Print posts in page
+
+targetPostList.innerHTML = addPosts(posts);
