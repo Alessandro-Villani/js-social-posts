@@ -42,9 +42,41 @@ const posts = [
         date: new Date('04-23-2022'),
         content: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.',
         likes: 52
-    }
+    },
+    {
+        id: 3,
+        name: 'Giuseppe Marino',
+        profilePicture: 'https://unsplash.it/300/300?image=17',
+        date: new Date('07-15-2021'),
+        content: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.',
+        picture: 'https://unsplash.it/600/300?image=158',
+        likes: 63
+    },
+    {
+        id: 4,
+        name: 'Mario Rossi',
+        date: new Date('09-17-2019'),
+        content: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.',
+        picture: 'https://unsplash.it/600/300?image=174',
+        likes: 256
+    },
+    {
+        id: 5,
+        name: 'Paolo Bianchi',
+        profilePicture: 'https://unsplash.it/300/300?image=25',
+        date: new Date('07-15-2021'),
+        content: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.',
+        likes: 72
+    },
+    {
+        id: 6,
+        name: 'Elena Di Giovanni',
+        date: new Date('07-15-2021'),
+        content: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.',
+        likes: 47
+    },
 
-    // TODO fill with more
+    
 
 ]
 
